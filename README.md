@@ -29,5 +29,5 @@ Il progetto è stato interamente sviluppato in locale con XAMPP.
 ---
 
 # Autore
-Cristian Petrilli
-cristianpetrilli404@gmail.com
+[Cristian Petrilli]
+[cristianpetrilli404@gmail.com]
