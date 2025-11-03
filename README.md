@@ -4,14 +4,14 @@ Il progetto è stato interamente sviluppato in locale con XAMPP.
 
 ---
 
-# Funzionalità principali
+## Funzionalità principali
 1. Visualizzare la programmazione settimanale degli spettacoli del teatro x.
 2. Gestione utente (registrazione, login, autenticazione tramite password, cambio della password)
 3. Effettuare prenotazioni per un determinato spettacolo in un teatro scelto, effettuando anche un controllo sulla disponibiltà dei posti
 
 ---
 
-# Tecnologie utilizzate
+## Tecnologie utilizzate
 1. HTML5
 2. CSS3
 3. PHP
@@ -20,7 +20,7 @@ Il progetto è stato interamente sviluppato in locale con XAMPP.
 
 ---
 
-# installazione ed avvio
+## installazione ed avvio
 1. Installare XAMPP
 2. Attivare apache e MySQL dall'interfaccia di XAMPP
 3. Copiare la cartella 'src' nella cartella `C:\xampp\htdocs\i100spettacoli\`
@@ -28,6 +28,6 @@ Il progetto è stato interamente sviluppato in locale con XAMPP.
 
 ---
 
-# Autore
+## Autore
 [Cristian Petrilli]
 [cristianpetrilli404@gmail.com]
