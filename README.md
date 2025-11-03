@@ -20,7 +20,7 @@ Il progetto è stato interamente sviluppato in locale con XAMPP.
 
 ---
 
-## installazione ed avvio
+## Installazione ed avvio
 1. Installare XAMPP
 2. Attivare apache e MySQL dall'interfaccia di XAMPP
 3. Copiare la cartella 'src' nella cartella `C:\xampp\htdocs\i100spettacoli\`
