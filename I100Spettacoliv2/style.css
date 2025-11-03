@@ -1,0 +1,361 @@
+/*--------------------------------------- GENERALE ---------------------------------------*/
+body, html{
+	height: 100%;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	font-family: "lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+	scroll-behavior: smooth;
+}
+ul{
+	list-style: none;
+	margin: 0;
+}
+li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+/*--------------------------------------- IMMAGINI ---------------------------------------*/
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+	position: relative;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: none;
+	height: 400px;
+}
+.pimg1, .pimg1full{
+	background-image: url('img/sfondo/img1v2.jpg');	
+}
+.pimg2, .pimg2full{
+	background-image: url('img/sfondo/img2.jpg');
+}
+.pimg3, .pimg3full{
+	background-image: url('img/sfondo/img3.jpg');
+}
+.pimg4, .pimg4full{
+	background-image: url('img/sfondo/img4v2.jpg');
+}
+.pimg5, .pimg5full{
+	background-image: url('img/sfondo/img5.jpg');
+}
+.pimg1full, .pimg2full, .pimg3full, .pimg4full, .pimg5full{
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	height: 400px;
+	margin-top: 0;
+}
+
+/*--------------------------------------- CLASSI ---------------------------------------*/
+.dark{
+	padding: 30px 80px;
+	background-color: #222;
+	color: #f7f7f7;
+}
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	
+}
+.ptext .border{
+	padding: 20px;
+	background-color: rgba(17, 17, 17, 0.8);
+	color: #fff;
+}
+.border{
+	transition-duration: 0.4s;
+}
+.ptext a{
+	text-decoration: none;
+}
+.ptext a:hover{
+	font-size: 20px;	
+}
+.title input[type="submit"]{
+	background: transparent;
+	color: #fff;
+	font-size: 15px;
+	border: 0px;
+	font-family: lucida console;
+}
+.title input[type="submit"]:hover{
+	background: transparent;
+	color: rgb(29, 128, 214);
+	font-size: 20px;
+	cursor: pointer;
+}
+.diagonal{
+	border: 1px solid black;
+	display: flex;
+	width: 400px;
+	box-sizing: border-box;
+	margin-top: 200px;
+}
+.diagonalHover {
+	position: absolute;
+	width: 66%;
+	height: 95%;
+	transition: all 0.5s ease-out;
+}
+.diagonalHover.frist{
+	background-image: url('img/diagonalHover/img1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.diagonalHover.second{
+	background: url('img/diagonalHover/img2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.diagonalHover.frist:hover{
+	width: 70%;
+	z-index: 1;
+}
+.diagonalHover.second:hover{
+	width: 70%;
+	z-index: 1;
+}
+.diagonalHover.frist:hover + .second{
+
+}
+
+.diagonalHover.frist{
+	left: 0;
+	top: 50px;
+	-webkit-clip-path : polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+}
+.diagonalHover.second{
+	right: 0;
+	top: 50px;
+	-webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.teatribg{
+	position: relative;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+.transparentForm{
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: white;
+}
+.buttonText input[type="submit"]{
+	background: transparent; 
+	border: 0px; 
+	color: #fff; 
+	font-size: 15px; 
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.buttonText input[type="submit"]:hover{
+	cursor: pointer;
+	-webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.split{
+	position: absolute;
+	width: 34%;
+	height: 100%;
+	overflow: hidden;
+}
+.split.left{
+	left: 0;
+	background: url('img/container/img1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.split.center{
+	left: 33%;
+	background: url('img/container/img2v4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.split.right{
+	right: 0;
+	background: url('img/container/img3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.select select{
+	background: transparent;
+	border: 0px;
+	border-bottom: 3px solid rgb(29, 128, 214);
+	color: #fff;
+}
+.select select option{
+	background: rgba(17, 17, 17, 0.8);
+	border: 0px;
+	border-bottom: 3px solid rgba(17, 17, 17, 0.8);
+	color: #fff;
+}
+.select input[type="submit"]{
+	border: 1px solid rgb(29, 128, 214); 
+	border-radius: 6px;
+	background: rgba(17, 17, 17, 0.8);
+	text-align: center;
+	color: white;
+	width: 10%;
+	height: 3%;
+	cursor: pointer;
+}
+.select input[type="submit"]:hover{
+	background: rgb(29, 128, 214);
+	height: 4%;
+}
+.inValid{
+	border: 0px solid;
+	border-bottom: 4px solid #b23849; 
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: #b23849; 
+}
+
+/*--------------------------------------- DIV ---------------------------------------*/
+
+#header{
+	width: 100%;
+	max-height: 50px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #0a0a0a;
+	border-bottom: solid 1px #ffffff;
+	justify-content: flex-start;
+}
+#nav{
+	text-align: center;
+	text-transform: uppercase;	
+}
+#nav a{	
+	text-decoration: none;
+	color: #f7f7f7;
+}
+#pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0;
+	color : #fff;
+	font-size: 22px;
+	text-align: center;	
+}
+#logInForm{
+	background: rgba(17, 17, 17, 0.8);
+	text-align: center;
+	font-size: 22px;
+	padding-top: 40px;  
+	padding-bottom: 40px;
+	margin-right: 500px; /*600px scuola, 500px casa*/
+	margin-left: 500px; /*600px scuola, 500px casa*/
+	margin-top: 100px; /*200px scuola, 100px casa */
+	border-radius: 20px;
+	color: rgb(29, 128, 214);
+}
+#logInForm input[type="text"], input[type="password"], input[type="date"]{
+	border: 0px solid;
+	border-bottom: 4px solid rgb(29, 128, 214); 
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: white;
+	width: 45%;
+}
+#logInForm input[type="text"]:valid, input[type="password"]:valid, input[type="date"]:valid{
+	border: 0px solid;
+	border-bottom: 4px solid rgb(29, 128, 214); 
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: white;
+	width: 45%;
+}
+#logInForm input[type="text"]:invalid:not(:placeholder-shown), input[type="password"]:invalid:not(:placeholder-shown), input[type="date"]:invalid:not(:placeholder-shown){
+	border: 0px solid;
+	border-bottom: 4px solid #ff0033; 
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: #ff0033;
+	width: 45%;
+}
+#logInForm input[type="text"]:invalid:focus, input[type="password"]:invalid:focus, input[type="date"]:invalid:focus{
+	border: 0px solid;
+	border-bottom: 4px solid rgb(29, 128, 214); 
+	background: transparent;
+	text-align: center;
+	height: 5%;
+	color: white;
+	width: 50%;
+}
+#logInForm input[type="date"]::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+  	border-radius: 4px;
+  	margin-right: 2px;
+  	opacity: 3.5;
+  	filter: invert(0.8);
+}
+#logInForm input[type="submit"]{
+	border: 1px solid rgb(29, 128, 214); 
+	border-radius: 6px;
+	background: rgba(17, 17, 17, 0.8);
+	text-align: center;
+	color: white;
+	width: 25%;
+	height: 5%;
+	cursor: pointer;
+}
+#logInForm input[type="submit"]:hover{
+	background: rgb(29, 128, 214);
+}
+#teatri, #accedi, #account, #compra, #scopri{
+	transition-duration: 0.3s;
+}
+#teatri:hover{
+	color: rgb(29, 128, 214);
+}
+#accedi:hover{
+	color: rgb(29, 128, 214);
+}
+#account:hover{
+	color: rgb(29, 128, 214);
+}
+#compra:hover{	
+	color: rgb(29, 128, 214);
+}
+#scopri:hover{
+	color: rgb(29, 128, 214);
+}
